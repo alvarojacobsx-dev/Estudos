@@ -10,7 +10,7 @@ console.log(Boolean(NaN))
 
 
 //   -----Valores Truthy-----
-// Qual quer outro alem dos valores falsy
+// Valores que quando convertidos para boolean são true
 
 console.log("1: ", Boolean(1))
 console.log("Ola mundo:", Boolean('Ola Mundo'))
