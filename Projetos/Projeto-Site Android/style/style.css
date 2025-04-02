@@ -31,6 +31,11 @@
     
 }
 
+/* Configuração global, ela seleciona todos os elementos em HTML*/
+* {           
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
     background-color: var(--cor0);
@@ -50,6 +55,14 @@ header > p {
     color: white;
 }
 
+nav {
+    background-color: var(--cor5);
+}
+
+main {
+    background-color: white;
+}
+
 main h1 {
     color: var(--cor5);
     font-family: var(--font-padrao);
@@ -57,4 +70,9 @@ main h1 {
 
 main h2 {
     font-family:var(--font-android);
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
 }
