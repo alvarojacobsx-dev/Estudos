@@ -31,16 +31,29 @@
     
 }
 
+
+
 /* Configuração global, ela seleciona todos os elementos em HTML*/
 * {           
     margin: 0px;
     padding: 0px;
 }
 
+
+
 body{
     background-color: var(--cor0);
     font-family: var(--font-padrao);
 }
+
+
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+
+
 
 header {
     background-color: var(--cor4);
@@ -54,6 +67,7 @@ header > h1{
     color: white;
     font-family: var(--font-destaque);
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.526);
     
@@ -119,16 +133,21 @@ main img.pequena {
 main h1 {
     color: var(--cor5);
     font-family: var(--font-padrao);
+    font-size: 1.8em;
+    font-weight: normal;
 }
 
 main h2 {
     font-family:var(--font-android);
     color: var(--cor4);
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 
 }
+
+
 
 main p {
     margin: 15px 0px ;
@@ -138,10 +157,14 @@ main p {
     font-size: 1em;
 }
 
+
+
 main strong {
     color: var(--cor4);
     font-weight: bold;
 }
+
+
 
 main a {
     text-decoration: none;
@@ -152,13 +175,64 @@ main a {
     color: var(--cor4);
 }
 
+
+
 main a:hover {
     text-decoration: underline;
     color: #2fa866;
 }
 
-footer{
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+aside { 
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.489);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;   /* 1-encima 2-embaixo 3-direita 4-esquerda*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+
+footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--cor1);
     
 }
