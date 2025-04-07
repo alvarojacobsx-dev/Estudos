@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Imagens De Fundo </title>
+
+    <style>
+        body {
+            background-image: url(img/wallpaper001.jpg);
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgb(117, 118, 119);
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1 {
+            background-color:  rgb(23, 198, 75);
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, rgb(11, 104, 197), rgb(30, 224, 241)  );
+        }
+
+        div#q3 {
+            background-image: linear-gradient(to bottom, rgb(241, 30, 142), rgb(89, 3, 49));
+            background-image: url(img/pattern001.png); 
+        }   
+    </style>
+
 </head>
 <body>
-    
+    <div class="quadrado" id="q1">
+        
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
 </body>
 </html>
