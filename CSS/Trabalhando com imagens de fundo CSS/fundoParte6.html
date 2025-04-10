@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fundos de Imagens </title>
+    <title> Fundos Fixo De Tela </title>
     <style>
         body {
-            height: 100vh;
+           /* height: 100vh;
             background-color: black;
             background-image: url(img/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+           /*    Shortthand  - background
+                 Color > image > psition > repea >  > attachment 
+           */
+            
+            background: black  url(img/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover;
+
+            /* Size não funciona dentro da shortthand */
+
+            
         }
         main {
             
