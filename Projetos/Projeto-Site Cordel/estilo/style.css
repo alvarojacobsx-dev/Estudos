@@ -57,15 +57,30 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family:var(--font2);
-    font-size: 1.8  vw;
+    font-size: 3vw;
+}
+
+
+section > p {
+    padding-bottom: 2em;
+    
+}
+
+section.imagem {
+    box-shadow: 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 
 section.imagem > p {
-    background-color: #745338;
+    background-color: #5c534c5e;
     display: inline-block;
     padding: 5px;    
+    color: white;
+    text-shadow: 2px 1px 0px black;
 }
+
+
 
 
 section.marrom {
@@ -73,6 +88,18 @@ section.marrom {
     color: rgb(0, 0, 0)
 }
 
+section#img01 {
+    background-image: url('../pacote-d012/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+
+section#img02 {
+    background-image:url('../pacote-d012/imagens/background002.jpg');
+    background-size: cover;
+
+} 
 
 footer {
     background-color: #40301C;
