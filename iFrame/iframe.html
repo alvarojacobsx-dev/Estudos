@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo sobre iFrame</title>
+    <style>
+        iframe {
+           width: 400px;
+           height: 400px;
+           border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
         acessando o site referente aos 
 
-        <iframe src="https://www.estudonauta.com/licao/capitulo-22-aula-1-nosso-primeiro-iframe/" frameborder="0"></iframe>
+         <!-- Tamanho padrão 300x150 -->
+        <iframe src="https://www.estudonauta.com/licao/capitulo-22-aula-1-nosso-primeiro-iframe/" frameborder="0" height="500" scolling="no">
+            <a href="https://www.estudonauta.com/licao/capitulo-22-aula-1-nosso-primeiro-iframe/" target="_blank">curso</a>
+
+        </iframe>
         
         estudos
     </p>
-    
+
 </body>
 </html>
